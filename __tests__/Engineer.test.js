@@ -4,7 +4,17 @@ const Engineer = require('../lib/Engineer');
 
 // Creating Engineering object
 
-test('creation of Engineer object', () => {
+test('creating an engineer object', () => {
+
+    const engineer = new Engineer('Mordred', 404, 'mordred@roundtable.com', 'killerMordred');
+
+    expect(typeof engineer).toBe("object");
+    
+});
+
+//getting input and extended Employee class for Engineer object
+
+test('getting input for Engineer object', () => {
 
     const engineer = new Engineer('Mordred', 404, 'mordred@roundtable.com', 'killerMordred');
 

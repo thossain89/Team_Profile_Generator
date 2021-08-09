@@ -5,7 +5,17 @@ const Manager = require('../lib/Manager');
 
 // creating manager object
 
-test('creation of manager object', () => {
+test('creating a manager object', () => {
+
+    const manager = new Manager('Arthur', 100, 'arthur@roundtable.com', 1);
+
+    expect(typeof manager).toBe("object");
+    
+});
+
+// Checking input and extended parent class for manager
+
+test('getting input of manager object', () => {
 
     const manager = new Manager('Arthur', 100, 'arthur@roundtable.com', 1);
 

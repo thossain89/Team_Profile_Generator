@@ -4,7 +4,17 @@ const Intern = require('../lib/Intern');
 
 // Checking creation of Intern object
 
-test('creation of Intern object', () => {
+test('creating an Intern object', () => {
+
+    const intern = new Intern('Galahad', 200, 'galahad@roundtable.com', 'Shield of Camelot Public School');
+
+    expect(typeof intern).toBe("object");
+    
+});
+
+//checking extended class Employee and input value for Intern object
+
+test('input value for Intern object', () => {
 
     const intern = new Intern('Galahad', 200, 'galahad@roundtable.com', 'Shield of Camelot Public School');
 

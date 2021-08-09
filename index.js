@@ -122,7 +122,7 @@ const addEmployee = () =>{
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the employee's ID.",
+            message: "Please enter the employee's ID",
             validate: idNumber => {
                 if  (isNaN(idNumber)) {
                     console.log (chalk.bold.red("\nID number is required!"))
@@ -149,14 +149,14 @@ const addEmployee = () =>{
         {
             type: 'input',
             name: 'github',
-            message: "Please enter the employee's github username.",
+            message: "Please enter the employee's github username",
             when: (input) => input.role === "Engineer",
             validate: nameInput => (nameInput !== '') ? true : console.log(chalk.bold.red(`Please enter your employee's github username !`))
         },
         {
             type: 'input',
             name: 'school',
-            message: "Please enter the intern's school",
+            message: "Please enter the intern's school name",
             when: (input) => input.role === "Intern",
             validate: nameInput => (nameInput !== '') ? true :  console.log(chalk.bold.red(`Please enter your employee's school name !`))
         },
